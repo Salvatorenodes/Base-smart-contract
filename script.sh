@@ -72,7 +72,7 @@ curl -o hardhat.config.ts https://raw.githubusercontent.com/Salvatorenodes/Base-
 echo "Create deploy.ts"
 curl -o ./scripts/deploy.ts https://raw.githubusercontent.com/Salvatorenodes/Base-smart-contract/main/deploy.ts
 
-read -p "Enter the Name of your smart contract(How in creating): " Contract
+read -p "Enter the Name of your smart contract: " Contract
 sed -i "s/Name/$Contract/g" ./scripts/deploy.ts
 
 read -p "Enter the name of your smart contract (firs letter is small!!!!): " Contract
